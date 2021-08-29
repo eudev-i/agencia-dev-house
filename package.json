@@ -1,0 +1,22 @@
+{
+  "name": "agenciadevhouse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "./node_modules/.bin/nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.3",
+    "uuidv4": "^6.2.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

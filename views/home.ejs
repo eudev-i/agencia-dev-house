@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Home Agência Dev House</title>
+  </head>
+  <body>
+    <img src="/img/chat.png" alt="Chat" class="iconChat">
+    <header>
+      <img src="/img/logo.png" alt="Agencia Dev House" title="logo">
+      <nav class="menu">
+        <a href="">Home</a>
+        <a href="">Produtos</a>
+        <a href="">Depoimentos</a>
+        <a href="/blog"> Blog </a>
+        <% if(typeof usuario !== 'undefined') { %>
+            <h6>Olá <%= usuario.nome %></h6>
+        <% } else { %>
+            <a href=""> Login </a>
+        <% } %>
+      </nav>
+      <div class="atendimento">
+        <a href="tel:+5511954263763">(11) 95426-3763</a>
+        <button>Atendimento</button>
+      </div>
+    </header>
+    <section class="banner">
+      <h1>Sua empresa<br>sempre no topo</h1>
+      <h5>Podemos alavancar seu negócio</h5>
+      <div class="menuMain">
+        <button>Conheça agora</button>
+        <button>Entre em contato</button>
+      </div>
+      <img src="/img/banner.png" alt="">
+    </section>
+    <section class="infos">
+      <h6>Confiado por equipes de software com visão de futuro em todo o mundo</h6>
+      <div id="clientes">
+        <img class="logo-clientes" src="/img/logo-draw-kit.png" alt="DrawKit"/>
+        <img class="logo-clientes" src="/img/logo-cinemax.png" alt="Cinemax"/>
+        <img class="logo-clientes" src="/img/logo-disney.png" alt="Disney"/>
+      </div>
+      <h2>Seja qual for o trabalho que você fizer,<br>podemos ajudar</h2>
+      <div class="serviços">
+        <h4>Design and Assets</h4>
+        <p>Faça sua marca se destacar com um design perfeito e elaborado com perfeição.</p>
+      </div>
+      <div class="serviços">
+        <h4>Easy Content</h4>
+        <p>Importe suas demos ou crie páginas visualmente. Bônus: Todas as imagens e ilustrações incluídas!</p>
+      </div>
+      <div class="serviços">
+        <h4>Fast and Reliable</h4>
+        <p>Sem plug-ins pesados. Sem construtores. Nenhum carregamento de arquivo desnecessário. Puro WordPress.</p>
+      </div>
+      <h2>O que os outros estão dizendo</h2>
+      <div class="avaliacoes">
+        <div class="boxAvaliacao">
+          <p>Site totalmente lindo e suporte incrível! Este é o meu segundo site deste autor e eu amo muito os dois 
+            sites e ela me ajudou muito quando eu precisei!
+          </p>
+          <img src="/img/user-1.png" alt="User">
+          <h4>Happy User</h4>
+          <p>tempy.club</p>
+        </div>
+        <div class="boxAvaliacao">
+          <p>Muito fácil de usar e personalizar. fácil de entender. Darinka me 
+            ajudou com meu site! Ela responde muito rápido, um bom atendimento! 
+            Muito obrigado!
+          </p>
+          <img src="/img/user-2.png" alt="User">
+          <h4>Happy User</h4>
+          <p>tempy.club</p>
+        </div>
+        <div class="boxAvaliacao">
+          <p>Muito agradável de se olhar! A documentação (incluindo instruções 
+            de instalação) é clara e vem de um usuário relativamente novo do 
+            WordPress.
+          </p>
+          <img src="/img/user-3.png" alt="User">
+          <h4>Happy User</h4>
+          <p>tempy.club</p>
+        </div>
+      </div>
+    </section>
+    <section id="boxContato">
+      <h2>Pronto para lançar<br>seu próximo site?</h2>
+      <div id="contato">
+        <button>Entre em contato agora</button>
+        <p>Ou dê uma olhada dentro de nosso estúdio de design</p>
+      </div>
+    </section>
+    <footer>
+    </footer>
+  </body>
+</html>
